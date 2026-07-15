@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | AI Career Guide</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            AI Career Guide
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="careers.html">Careers</a></li>
+
+            <li><a href="quiz.html">Career Quiz</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Contact Section -->
+
+    <section class="career-preview">
+
+        <h2>Contact Us</h2>
+
+        <p style="margin-bottom:40px;">
+            We'd love to hear from you! Send us your questions or feedback.
+        </p>
+
+        <div class="card" style="max-width:700px;margin:auto;">
+
+            <form id="contactForm">
+
+                <label><strong>Full Name</strong></label>
+
+                <input type="text" id="name" placeholder="Enter your full name" required>
+
+                <label><strong>Email Address</strong></label>
+
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label><strong>Your Message</strong></label>
+
+                <textarea id="message" rows="6" placeholder="Type your message here..."
+                    required></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
+
+            <p id="successMessage"></p>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Information -->
+
+    <section class="features">
+
+        <h2>Get in Touch</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>Email</h3>
+
+                <p>aicareerguide@gmail.com</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <h3>Phone</h3>
+
+                <p>+91 98765 43210</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Location</h3>
+
+                <p>Chennai, Tamil Nadu, India</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 AI Career Guidance Portal | Internship Project
+        </p>
+
+    </footer>
+
+    <script>
+
+        const form = document.getElementById("contactForm");
+
+        const success = document.getElementById("successMessage");
+
+        form.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            success.innerHTML = "✅ Thank you! Your message has been sent successfully.";
+
+            success.style.color = "green";
+            success.style.fontWeight = "bold";
+            success.style.marginTop = "20px";
+            success.style.textAlign = "center";
+
+            form.reset();
+
+        });
+
+    </script>
+
+</body>
+
+</html>

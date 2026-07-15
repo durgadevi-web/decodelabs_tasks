@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Quiz</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+    <div class="logo">
+        AI Career Guide
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="quiz.html">Career Quiz</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+<!-- Quiz Section -->
+
+<section class="career-preview">
+
+<h2>AI Career Recommendation Quiz</h2>
+
+<p style="margin-bottom:30px;">
+Answer the following questions to discover the best career for you.
+</p>
+
+<div class="card" style="max-width:700px;margin:auto;text-align:left;">
+
+<label><b>1. Which subject do you enjoy the most?</b></label>
+
+<select id="subject" style="width:100%;padding:12px;margin-top:10px;margin-bottom:25px;">
+
+<option value="">Select</option>
+
+<option value="programming">Programming</option>
+
+<option value="math">Mathematics</option>
+
+<option value="design">Design</option>
+
+<option value="network">Networking</option>
+
+</select>
+
+<label><b>2. What do you like doing?</b></label>
+
+<select id="interest" style="width:100%;padding:12px;margin-top:10px;margin-bottom:25px;">
+
+<option value="">Select</option>
+
+<option value="coding">Writing Code</option>
+
+<option value="analysis">Analyzing Data</option>
+
+<option value="creative">Creating Designs</option>
+
+<option value="servers">Managing Servers</option>
+
+</select>
+
+<label><b>3. What is your dream job?</b></label>
+
+<select id="goal" style="width:100%;padding:12px;margin-top:10px;margin-bottom:25px;">
+
+<option value="">Select</option>
+
+<option value="ai">AI Engineer</option>
+
+<option value="data">Data Scientist</option>
+
+<option value="cloud">Cloud Engineer</option>
+
+<option value="web">Web Developer</option>
+
+</select>
+
+<center>
+
+<button onclick="recommendCareer()" class="btn">
+
+Get Recommendation
+
+</button>
+
+</center>
+
+<h2 id="result" style="margin-top:35px;text-align:center;color:#2563eb;"></h2>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 AI Career Guidance Portal | Internship Project
+
+</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
