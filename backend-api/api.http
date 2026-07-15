@@ -1,0 +1,76 @@
+### Home
+GET http://localhost:3000/
+
+###
+
+### Get All Users
+GET http://localhost:3000/users
+
+###
+
+### Get User By ID
+GET http://localhost:3000/users/1
+
+###
+
+### Add User
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Arun",
+  "email": "arun@gmail.com",
+  "age": 21
+}
+
+###
+
+### Invalid Email
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Arun",
+  "email": "arungmail.com",
+  "age": 21
+}
+
+###
+
+### Age Validation
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Arun",
+  "email": "arun@example.com",
+  "age": 15
+}
+
+###
+
+### Duplicate Email
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Rahul",
+  "email": "rahul@gmail.com",
+  "age": 23
+}
+
+###
+
+### Update User
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "name": "Karthik Raja",
+  "age": 23
+}
+
+###
+
+### Delete User
+DELETE http://localhost:3000/users/2
